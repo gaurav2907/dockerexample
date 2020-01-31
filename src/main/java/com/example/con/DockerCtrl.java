@@ -31,6 +31,10 @@ public class DockerCtrl {
 	@Value("#{${db.connection}}")
 	private Map<String,String> myMap;
 	
+	@Value("${my.strin}")
+	private String my;
+	
+	
 	@Autowired
 	private DbSettings DbSettings;
 	
@@ -39,7 +43,7 @@ public class DockerCtrl {
 	
 	@RequestMapping
 	public String show() {
-		return "hello:"+myLogo+"lesson done"+myList+"mapppppp"+myMap+"db"+DbSettings.getConnection()+"sssssssss"+myLogo1;
+		return "hello:"+myLogo+"lesson done"+myList+"mapppppp"+myMap+"db"+DbSettings.getConnection()+"sssssssss"+myLogo1+"jjjjjj"+my;
 		
 	}
 	
