@@ -25,7 +25,8 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<!--use the actuator endpoints to get additional endpoints . we can use 
-			http://localhost:portno/actuator/configprops to check additional props -->
+			http://localhost:portno/actuator/configprops to check additional props and use http://localhost:portno/actuator/refresh with post and body <status
+			:"UP" and need to add @RefreshToken to the bean classes, just the change the git repo and post the refersh endpoint and client will recive the c hanges-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>

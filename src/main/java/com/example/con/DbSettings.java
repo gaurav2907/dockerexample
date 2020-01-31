@@ -1,10 +1,12 @@
 package com.example.con;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ConfigurationProperties("db")
+@RefreshScope
 public class DbSettings {
 
 	
